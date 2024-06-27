@@ -7,12 +7,30 @@
     box-sizing: border-box;
 }
 
+/*general style rule*/
+body {
+    /*Using min-height will allow to stretch larger than the height of the
+screen when there is enough content on the page that the user needs to scroll.*/
+    min-height: 100vh;
+    /* set the display to flex and the flex-direction
+    to column, so elements will still show underneath each other*/
+    display: flex;
+    flex-direction: column;
+    /* generic project style*/
+    color: black;
+}
+
+
+/* specific style rules */
+
 header {
     background-color: beige;
 }
 
 main {
     background-color: burlywood;
+    /* flex 1 0 auto ->Need the main element to take up any surplus space*/
+    flex: 1 0 auto;
 }
 
 footer {
