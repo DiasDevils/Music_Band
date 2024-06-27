@@ -1,0 +1,20 @@
+/*asterix wildcard to override default styles added by browser*/
+* {
+    padding: 0;
+    margin: 0;
+    /*box sizing for all elements to border box to set hight and width of element will be applied
+    to entire element including border*/
+    box-sizing: border-box;
+}
+
+header {
+    background-color: beige;
+}
+
+main {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: cadetblue;
+}
