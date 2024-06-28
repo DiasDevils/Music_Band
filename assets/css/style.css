@@ -21,14 +21,14 @@ screen when there is enough content on the page that the user needs to scroll.*/
     display: flex;
     flex-direction: column;
     /* generic project style*/
-    color: black;
+    color: white;
     font-family: 'Holtwood', sans-serif
 }
 
 
 /* specific style rules */
 header {
-    background-color: rgb(217, 234, 213);
+    background-color: rgb(10, 10, 10);
     /*padding left and right to prevent text sticking
     to either side*/
     padding: 0 1rem;
@@ -37,13 +37,21 @@ header {
     /*high zindex to make sure its layered on top of any
      other elements that may have zindex*/
     z-index: 99;
+
     /*width 100% so it fits entire screen*/
     width: 100%;
-    box-shadow: 0 3px 3px black;
+    box-shadow: 0 3px 3px white;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     font-family: 'Kameron', sans-serif;
+    text-transform:capitalize;
+    letter-spacing: 1px; 
 }
 
 
