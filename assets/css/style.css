@@ -33,6 +33,11 @@ header {
     background-color: beige;
 }
 
+h1 {
+    font-family: 'Kameron', sans-serif;
+}
+
+
 main {
     background-color: burlywood;
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
