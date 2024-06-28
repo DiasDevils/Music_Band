@@ -1,6 +1,5 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Kameron:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
 
 /*asterix wildcard to override default styles added by browser*/
@@ -28,9 +27,19 @@ screen when there is enough content on the page that the user needs to scroll.*/
 
 
 /* specific style rules */
-
 header {
-    background-color: beige;
+    background-color: rgb(217, 234, 213);
+    /*padding left and right to prevent text sticking
+    to either side*/
+    padding: 0 1rem;
+    /*fixed so it stays put*/
+    position: fixed;
+    /*high zindex to make sure its layered on top of any
+     other elements that may have zindex*/
+    z-index: 99;
+    /*width 100% so it fits entire screen*/
+    width: 100%;
+    box-shadow: 0 3px 3px black;
 }
 
 h1 {
