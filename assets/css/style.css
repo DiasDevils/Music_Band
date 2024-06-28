@@ -50,8 +50,8 @@ header a {
 
 h1 {
     font-family: 'Kameron', sans-serif;
-    text-transform:capitalize;
-    letter-spacing: 1px; 
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 #page {
@@ -60,12 +60,24 @@ h1 {
     list-style-type: none;
 }
 
-#page > li {
-margin-bottom: 1em;
+#page>li {
+    margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 2px solid white;
 }
+
+nav {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 3px 3px white;
+    left: 0;
+    display: none;
+}
+
 main {
     background-color: burlywood;
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
