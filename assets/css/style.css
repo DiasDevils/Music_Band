@@ -41,6 +41,9 @@ header {
     /*width 100% so it fits entire screen*/
     width: 100%;
     box-shadow: 0 3px 3px white;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -68,6 +71,17 @@ h1 {
     border-bottom: 2px solid white;
 }
 
+/*nav open close*/
+#nav-open-close:checked~nav{
+    display: block;
+}
+
+#nav-open-close {
+    display:none;
+}
+.label-open-close{
+    font-size: 2rem;
+}
 nav {
     position: absolute;
     background-color: black;
@@ -76,6 +90,7 @@ nav {
     box-shadow: 0 3px 3px white;
     left: 0;
     display: none;
+    top:100%;
 }
 
 main {
