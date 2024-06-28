@@ -1,5 +1,7 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Kameron:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
 
 /*asterix wildcard to override default styles added by browser*/
 * {
@@ -21,6 +23,7 @@ screen when there is enough content on the page that the user needs to scroll.*/
     flex-direction: column;
     /* generic project style*/
     color: black;
+    font-family: 'Holtwood', sans-serif
 }
 
 
