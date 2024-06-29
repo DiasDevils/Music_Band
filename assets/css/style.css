@@ -6,20 +6,17 @@
 * {
     padding: 0;
     margin: 0;
-    /*box sizing for all elements to border box to set hight and width of element will be applied
-    to entire element including border*/
     box-sizing: border-box;
 }
 
 /*general style rule*/
 body {
-    /*Using min-height will allow to stretch larger than the height of the
-screen when there is enough content on the page that the user needs to scroll.*/
+    /*Using min-height will allow to stretch larger than the height of the screen when there is enough content on the page that the user needs to scroll.*/
     min-height: 100vh;
-    /* set the display to flex and the flex-direction
-    to column, so elements will still show underneath each other*/
+    /* set the display to flex and the flex-direction to column, so elements will still show underneath each other*/
     display: flex;
     flex-direction: column;
+
     /* generic project style*/
     color: white;
     font-family: 'Holtwood', sans-serif
@@ -29,19 +26,16 @@ screen when there is enough content on the page that the user needs to scroll.*/
 /* specific style rules */
 header {
     background-color: rgb(10, 10, 10);
-    /*padding left and right to prevent text sticking
-    to either side*/
+    /*0 for top and botom , 1rem for right and left*/
     padding: 0 1rem;
     /*fixed so it stays put*/
     position: fixed;
-    /*high zindex to make sure its layered on top of any
-     other elements that may have zindex*/
+    /*high zindex to make sure its layered on top of any other elements that may have zindex*/
     z-index: 99;
-
     /*width 100% so it fits entire screen*/
     width: 100%;
-    box-shadow: 0 3px 3px white;
-    display:flex;
+    box-shadow: 0 1px 10px white;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -57,13 +51,13 @@ h1 {
     letter-spacing: 1px;
 }
 
-#page {
-    font: size 100%;
+#menu {
+    font-size: 100%;
     letter-spacing: 1px;
     list-style-type: none;
 }
 
-#page>li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -72,34 +66,61 @@ h1 {
 }
 
 /*nav open close*/
-#nav-open-close:checked~nav{
+#nav-open-close:checked~nav {
     display: block;
 }
 
 #nav-open-close {
-    display:none;
+    display: none;
 }
-.label-open-close{
+
+.label-open-close {
     font-size: 2rem;
 }
+
 nav {
     position: absolute;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
-    padding: 0 1rem;
-    box-shadow: 0 3px 3px white;
-    left: 0;
+    /* padding: 0 1rem; */
+    box-shadow: 0 1px 10px white;
+    /* left: 0; */
     display: none;
-    top:100%;
+    /* top: 100%; */
 }
 
 main {
-    background-color: black;
+    background-color: rgb(42, 39, 39);
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
     flex: 1 0 auto;
-    margin-top: 42px;
+    margin-top: 48px;
 }
 
 footer {
-    background-color: cadetblue;
+    background-color: rgb(68, 82, 83);
+}
+
+
+@media screen and (min-width:768px) {
+
+    /*header*/
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding-right: 2rem;
+        box-shadow: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 2rem;
+    }
+
+    .label-open-close {
+        display: none;
+    }
 }
