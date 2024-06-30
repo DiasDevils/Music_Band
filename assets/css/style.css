@@ -91,7 +91,7 @@ nav {
 }
 
 
-
+/*Main content*/
 main {
     background-color: rgb(10, 10, 10);
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
@@ -100,9 +100,23 @@ main {
 }
 
 footer {
-    background-color: white;
+    /* background-color: white; */
+    background-color: black;
 }
+#social-networks {
+    text-align: center;
+    padding:20px 0;
+    display: flex;
+    justify-content: space-evenly ;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 180%;
+    padding: 10%;
+    /* color:black; */
+    color: white;
 
+}
 
 @media screen and (min-width:768px) {
 
