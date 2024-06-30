@@ -93,14 +93,14 @@ nav {
 
 
 main {
-    background-color: rgb(42, 39, 39);
+    background-color: rgb(10, 10, 10);
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
     flex: 1 0 auto;
     margin-top: 45px;
 }
 
 footer {
-    background-color: rgb(68, 82, 83);
+    background-color: white;
 }
 
 
