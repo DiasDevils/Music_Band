@@ -93,7 +93,7 @@ nav {
 
 /*Main content*/
 main {
-    background-color: rgb(10, 10, 10);
+    background-color: black;
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
     flex: 1 0 auto;
     margin-top: 45px;
