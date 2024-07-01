@@ -144,6 +144,34 @@ footer {
 
 }
 
+#info {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#info h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#reason-one>div,
+#reason-two>div {
+    line-height: 27px;
+    margin-bottom: 27px;
+}
+
+#info-detail p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 2px dotted white;
+    margin: 5px 0;
+}
+#reason-one>div>h3,
+#reason-two>div>h3 { text-align: center;} 
+
 @media screen and (min-width:768px) {
 
     /* header */
