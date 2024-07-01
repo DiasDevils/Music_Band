@@ -93,10 +93,18 @@ nav {
 
 /*Main content*/
 main {
-    background-color: black;
+    /* background-color: black; */
     /* flex 1 0 auto ->Need the main element to take up any surplus space*/
     flex: 1 0 auto;
     margin-top: 45px;
+}
+
+/*main pic*/
+#mainpic {
+    height: 600px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background: url(../images/mainpic.jpg) no-repeat center center/cover;
 }
 
 footer {
