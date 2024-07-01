@@ -175,6 +175,7 @@ footer {
 
     /* the margin top pushes the main content down so it can be visible to allow larger text in header*/
     main {
+        background-color: black;
         margin-top: 79px;
     }
 
@@ -186,5 +187,8 @@ footer {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 2px solid white;
+    }
+    main {
+        background-color: black;
     }
 }
