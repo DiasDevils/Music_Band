@@ -166,11 +166,14 @@ footer {
 }
 
 hr {
-    border-top: 2px dotted white;
+    border-top: 1px dotted white;
     margin: 5px 0;
 }
+
 #reason-one>div>h3,
-#reason-two>div>h3 { text-align: center;} 
+#reason-two>div>h3 {
+    text-align: center;
+}
 
 @media screen and (min-width:768px) {
 
@@ -216,6 +219,7 @@ hr {
     #menu a:hover {
         border-bottom: 2px solid white;
     }
+
     main {
         background-color: black;
     }
