@@ -207,6 +207,25 @@ hr {
     text-align: center;
 }
 
+
+/* photos page */
+#photos img{
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
+
+/*media query : large or landscape phones 576 px up*/
+
+@media screen and (min-width:576px){
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 @media screen and (min-width:768px) {
 
     /* header */
