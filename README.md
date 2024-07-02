@@ -59,4 +59,7 @@ Favicons from https://favicon.io/emoji-favicons/guitar
 
 Code from https://github.com/Code-Institute-Solutions/love-running-v3
 
+Code from https://github.com/D0nni387/flex-demo/blob/main/assets/css/style.css
+
+
 Google font from https://fonts.google.com/selection/embed
