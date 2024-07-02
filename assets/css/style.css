@@ -31,7 +31,7 @@ header {
     /*fixed so it stays put*/
     position: fixed;
     /*high zindex to make sure its layered on top of any other elements that may have zindex*/
-    z-index: 99;
+    z-index: 999;
     /*width 100% so it fits entire screen*/
     width: 100%;
     box-shadow: 0 1px 10px white;
