@@ -115,11 +115,43 @@ main {
     font-size: 160%;
     position: absolute;
     top: 10px;
-    /*bottom:30px*/
-    width: 80%;
+    left:30px;
+    width: 60%;
     min-height: 130px;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+/* grid layout contact details */
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fullrow {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.halfrow {
+    width: 50%;
+    outline: 2px white;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top:20px;
+}
+
+.fullrow hr {
+        border-top: 1px solid white;
+        margin: 10px 100px;
+}
+
+.fullrow h2 {
+    /* margin-top:10px; */
+    padding:50px 5px 1px;
 }
 
 footer {
@@ -166,7 +198,7 @@ footer {
 }
 
 hr {
-    border-top: 1px dotted white;
+    border-top: 1px solid white;
     margin: 5px 0;
 }
 
