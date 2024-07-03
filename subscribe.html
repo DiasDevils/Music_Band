@@ -17,11 +17,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_music/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_music/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_music/favicon-16x16.png">
-    <!-- Favicon guitar option-->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_guitar/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_guitar/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_guitar/favicon-16x16.png"> -->
-
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -48,9 +43,28 @@
     </header>
 
     <!-- Main Content-->
-    <main>
-        <hr>
-        SUBSCRIPTION FORM GOES HERE
+    <main id="subscribe-main">
+        <section id="subscribe">
+            <h2> <i class="fa-solid fa-music"></i> Want to know where we are playing next? <i
+                    class="fa-solid fa-music"></i></h2>
+            <h3>Subscribe to keep up with our news and play events </h3> <!-- <i class="fa-solid fa-guitar"></i>-->
+            <form id="subscribe-form" method="POST" action="https://formdump.codeinstitute.net">
+                <br>
+                <br>
+                <label for="first-name"><b>First Name</b></label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <br>
+                <label for="location"><b>Town or City</b></label>
+                <input type="text" name="location" id="location" class="text-input" required>
+                <br>
+                <br>
+                <label for="email-address"><b>Email Address</b></label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+                <br>
+                <button type="submit" class="submit">Subscribe</button>
+            </form>
     </main>
 
     <!-- Footer-->
@@ -63,6 +77,12 @@
                         class="fa-brands fa-square-instagram"></i></a></li>
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
                     aria-label="visit our youtube channel (opens in new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li><a href="https://soundcloud.com/" target="_blank" rel="noopener"
+                    aria-label="visit our soundcloud (opens in new tab)"><i class="fa-brands fa-soundcloud"></i></a>
+            </li>
+            <li><a href="https://open.spotify.com/" target="_blank" rel="noopener"
+                    aria-label="visit our spotify (opens in new tab)"><i class="fa-brands fa-spotify"></i></a>
             </li>
         </ul>
     </footer>

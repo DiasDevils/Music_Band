@@ -218,6 +218,17 @@ hr {
     line-height: 0;
 }
 
+
+/*SUBSCRIBE*/
+#subscribe-main{
+    background-image: url("../images/mainpicopaq.jpg");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 30% 0 10%;
+    flex-grow: 1;
+}
+
+
 /*media query : large or landscape phones 576 px up*/
 
 @media screen and (min-width:576px) {
@@ -321,3 +332,4 @@ hr {
         flex: 1 1 calc(50% - 10px); /* Two columns layout */
     }
 }
+
