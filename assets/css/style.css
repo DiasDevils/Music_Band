@@ -115,7 +115,7 @@ main {
     font-size: 160%;
     position: absolute;
     top: 10px;
-    left:30px;
+    left: 30px;
     width: 60%;
     min-height: 130px;
     padding-top: 20px;
@@ -141,17 +141,17 @@ main {
     outline: 2px white;
     text-align: center;
     padding-bottom: 80px;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .fullrow hr {
-        border-top: 1px solid white;
-        margin: 10px 100px;
+    border-top: 1px solid white;
+    margin: 10px 100px;
 }
 
 .fullrow h2 {
     /* margin-top:10px; */
-    padding:50px 5px 1px;
+    padding: 50px 5px 1px;
 }
 
 footer {
@@ -184,7 +184,7 @@ footer {
 #info h2 {
     margin-bottom: 30px;
     text-align: center;
-    font-size: 280%;
+    font-size: 250%;
 }
 
 #reason-one>div,
@@ -209,17 +209,18 @@ hr {
 
 
 /* photos page */
-#photos img{
+#photos img {
     width: 100%;
     line-height: 1em;
 }
+
 #photos {
     line-height: 0;
 }
 
 /*media query : large or landscape phones 576 px up*/
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
     #photos {
         column-count: 2;
         column-gap: 0;
@@ -261,17 +262,62 @@ hr {
         margin-top: 79px;
     }
 
+    /* PHOTOS */
+    #photos {
+        column-count: 2;
 
-
-}
-
-
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 2px solid white;
     }
 
-    main {
-        background-color: black;
+
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        main {
+            background-color: black;
+        }
+    }
+
+    /* Specific to the photos page */
+/* Ensure the photos container fills the remaining space */
+#photos-page main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; /* Allow it to grow */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+#allphotos {
+    flex-grow: 1; /* Allow the photo container to take all the available space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the grid */
+    gap: 10px; /* Space between images */
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit the maximum width */
+}
+
+#photos img {
+    flex: 1 1 calc(50% - 10px); /* Each image takes 50% of the row width minus the gap */
+    max-width: calc(50% - 10px); /* Ensure each image does not exceed 50% of the row width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 576px) {
+    #photos img {
+        flex: 1 1 calc(50% - 10px); /* Two columns layout */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #photos img {
+        flex: 1 1 calc(50% - 10px); /* Two columns layout */
     }
 }
