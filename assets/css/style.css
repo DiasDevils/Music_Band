@@ -105,8 +105,8 @@ main {
 #mainpic {
     height: 900px;
     width: 100%;
-    /* background-color: aquamarine; */
-    background: url(../images/mainpic.jpg) no-repeat center center/cover;
+    background: url(../images/pexels-edward-eyer.webp) no-repeat center center/cover;
+    /* background: url(../images/mainpic.jpg) no-repeat center center/cover; */
     position: relative;
 }
 
