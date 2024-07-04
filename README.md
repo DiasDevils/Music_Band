@@ -63,8 +63,9 @@ Code from https://github.com/D0nni387/flex-demo/blob/main/assets/css/style.css
 
 Code from chat gpt for resposive photos
 
-Photos Credit:
+Photos Credit: 
+https://www.pexels.com/collections/rock-n-roll-kgyv6dc/
 Main page photo cortesy of pixel.com Edward Eyer
-
+Fotos page cortesy of pixel.com Pavel Danilyuk, RDNE, Sam Johnson, Saurav Sen, Sebastian Ervi and Darmel.
 
 Google font from https://fonts.google.com/selection/embed
